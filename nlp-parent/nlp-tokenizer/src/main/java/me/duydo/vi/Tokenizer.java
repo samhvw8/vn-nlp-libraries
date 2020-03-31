@@ -101,7 +101,7 @@ public class Tokenizer {
             // yes, I know that this "manual" method must be improved by a more general way.
             // But at least, it can fix an error with email addresses at the moment. :-)
             int endIndex = tokenEnd;
-            if (tokenEnd < line.length()) {
+            if (tokenEnd >= 0 && tokenEnd < line.length()) {
                 if (line.charAt(tokenEnd) == '@') {
                     while (endIndex > 0 && line.charAt(endIndex) != ' ') {
                         endIndex--;
