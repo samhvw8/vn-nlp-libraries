@@ -70,6 +70,10 @@ public class Tokenizer {
         while (true) {
             if (line == null || line.trim().length() == 0) {
                 line = reader.readLine();
+                // ignore empty line, e.g: \n\n in input
+                if ("".equals(line)) {
+                    continue;
+                }
                 if (line == null) {
                     break;
                 }
