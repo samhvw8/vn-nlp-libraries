@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tamedtornado</groupId>
 	<artifactId>nlp-parent</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>pom</packaging>
 	<description>Parent project for the Vietnamese language NLP jars</description>
 
