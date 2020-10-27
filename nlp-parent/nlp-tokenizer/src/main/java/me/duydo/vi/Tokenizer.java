@@ -148,6 +148,10 @@ public class Tokenizer {
                     }
 
                     // build tokens of the segmentation
+                    if (tokens == null) {
+                        continue;
+                    }
+
                     for (int j = 0; j < tokens.length; j++) {
                         result.add(new TaggedWord(new LexerRule(ruleName), tokens[j], reader.getLineNumber(), column));
                         column += tokens[j].length();
